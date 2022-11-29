@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: sans-serif;
+   }
+   
+   #Introduction, #Hello_World, #Introducing_JSX,#Rendering_Elements, #Components_and_Props{
+     margin-left: 5px;
+     margin-bottom: 30px;
+   }
+   
+   .line{
+     border-bottom: 1px solid white;
+     width: 60vw;
+     margin-left: -40;
+   
+   }
+   
+   .bar{
+     width: 30%;
+     height: 10em;
+     text-align: left;
+     background-color: gray;
+     margin-top: 10px;
+      padding-right: 35px;
+   }
+   
+   li{
+     list-style-type: none;
+     padding: 5px; 
+   }
+   
+   a{
+     text-decoration: none;
+     color: white;
+   }
+   
+   .command{
+     background-color: black;
+     color: white;
+     padding: 5px;
+     margin: 10px 0;
+     width: 60%;
+   }
+   
+   #function, #props{
+     margin-top: 15px;
+   }
+   
+   @media (max-width: 200){
+       #navbar{
+         width: 100px;
+       }
+   } 
+   
+   

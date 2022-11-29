@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>React Documentation</title>
+  </head>
+  <body>
+    <main id="main-doc">
+    <section class="main-section" id="React_Documentation">
+<header>
+      <h1>React Documentation</h1> 
+    </header>
+    <div class="bar">
+    <nav id="navbar">
+        <header>  
+        <ul>
+          <div class="line">
+          <li><a class="nav-link" href="#Introduction">Introduction</a></li></div>
+          <div class="line">
+          <li><a class="nav-link" href="#Hello_World">Hello World</a></li></div>
+          <div class="line">
+          <li><a class="nav-link" href="#Introducing_JSX" >Introducing JSX</a></li></div>     
+          <div class="line">
+          <li><a class="nav-link" href="#Rendering_Elements">Rendering Elements</a></li></div>
+          <div class="line">
+          <li><a class="nav-link" href="#Components_and_Props" >Components and Props</a></li></div>  
+          <li hidden><a class="nav-link" href="#React_Documentation">React Documentation</a></li>    
+        </header>
+      </nav> 
+    </section>
+    <section class="main-section" id="Introduction">
+        <header>  
+        <h1>Introduction</h1>
+        </header>
+         
+        
+        <p>React is a JavaScript library for building user interfaces.</p>
+      </section>
+      <section class="main-section" id="Hello_World">
+        <header>  
+        <h1>Hello World</h1>   
+        </header>  
+        <p>The smalest React example looks like this:</p>       
+        <div class="command">
+        <code>
+      const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(&lt;h1&gt;Hello, world!&lt;/h1&gt;);
+        </code>   
+        </div>
+      </section>
+      <section class="main-section" id="Introducing_JSX">
+        <header>
+        <h1>Introducing JSX</h1>
+        </header>
+         <p>Consider this variable declaration:</p>
+          <div class="command">
+          <code>
+          const element = &lt;h1&gt;Hello, world!&lt;/h1&gt;;
+          </code>
+          </div>
+        <p>This tag syntax is neither a string nor HTML</p>
+        <p>It is called JSX, and it is a extension to JavaScript.It is recomended to use it with React to describe what the UI should look like.
+        </section>
+        <section class="main-section" id="Rendering_Elements">
+          <header>
+            <h1>Rendering Elements</h1>
+          </header>
+          <p>Elements are the smallest building blocks of React apps.</p>
+          <p>An element describes what you want to see on the screen:</p>
+          <div class="command">
+            <code>
+              const element = &lt;h1&gt;Hello, world&lt;/h1&gt;;
+            </code>
+          </div>
+          <p>Unlike browser DOM elements, React elements are plain objects, and are cheap to create. React DOM takes care of updating the DOM to match the React elements.</p>
+        </section>
+        <section class="main-section" id="Components_and_Props">
+          <header>
+          <h1>Components and Props</h1>
+          </header>
+          <p>Components let you split the UI into independent, reusable pieces, and think about each piece in isolation.</p>
+          <p>Conceptually, components are like JavaScript functions. They accept arbitrary inputs (called “props”) and return React elements describing what should appear on the screen.</p>
+          <h1 id="function">Function and Class Components</h1>
+          <p>The simplest way to define a component is to write a JavaScript function:</p>
+          <div class="command">
+            <code>
+              function Welcome(props) {
+  return &lt;h1&gt;Hello, {props.name}&lt;/h1&gt;;
+            </code>
+          </div>
+          <p>This function is a valid React component because it accepts a single “props” (which stands for properties) object argument with data and returns a React element. We call such components “function components” because they are literally JavaScript functions.</p>
+          <h1 id="props">Props are Read-only</h1>
+          <p>Whether you declare a component as a function or a class, it must never modify its own props. Consider this sum function:</p>
+          <div class="command">
+            <code>
+              function sum(a, b) {
+  return a + b;
+}
+            </code>
+          </div>
+          <p>Such functions are called “pure” because they do not attempt to change their inputs, and always return the same result for the same inputs.</p>      
+        </section>
+          
+    </main>
+  </body>
+  </html>
